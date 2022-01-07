@@ -16,5 +16,4 @@ def count_bases(data):
     print(a, c, g, t)
 
 
-if __name__ == '__main__':
-    count_bases("data/rosalind_dna.txt")
+count_bases('data/rosalind_dna.txt')
