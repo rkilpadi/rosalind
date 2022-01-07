@@ -1,9 +1,7 @@
-import scan
-
-
 # reverses a DNA sequence and returns its complement
-def dna_complement(data):
-    dna = scan.scan_gene(data)
+def dna_complement(filename):
+    with open(filename, "r") as data:
+        dna = data.read().rstrip()
     complement = ''
     for char in dna:
         if char == 'A':

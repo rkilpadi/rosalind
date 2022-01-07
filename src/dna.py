@@ -1,9 +1,7 @@
-import scan
-
-
 # counts nucleotides and returns four integers representing A, C, G, T
-def count_bases(data):
-    dna = scan.scan_gene(data)
+def count_bases(filename):
+    with open(filename, "r") as data:
+        dna = data.read().rstrip()
     a, c, g, t = 0, 0, 0, 0
     for A in dna:
         a += 1
