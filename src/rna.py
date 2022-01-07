@@ -2,6 +2,7 @@
 def to_rna(filename):
     with open(filename, "r") as data:
         dna = data.read().rstrip()
+
     print(dna.replace('T', 'U'))
 
 

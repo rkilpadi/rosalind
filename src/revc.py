@@ -2,6 +2,7 @@
 def dna_complement(filename):
     with open(filename, "r") as data:
         dna = data.read().rstrip()
+
     complement = ''
     for char in dna:
         if char == 'A':
