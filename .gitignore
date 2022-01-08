@@ -114,4 +114,4 @@ dmypy.json
 .pyre/
 
 .idea
-**/data/test.txt
+/data/test.txt
