@@ -114,4 +114,5 @@ dmypy.json
 .pyre/
 
 .idea
-/data/test.txt
+.gitattributes
+/src/data/test.txt

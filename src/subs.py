@@ -6,7 +6,7 @@ def find_motifs(filename):
     substring = lines[1]
 
     i, j = 0, len(substring)
-    while j <= len(string):
+    while j < len(string):
         if string[i:j] == substring:
             print(i+1)
         i += 1
