@@ -114,5 +114,5 @@ dmypy.json
 .pyre/
 
 .idea
-.gitattributes
 /src/data/test.txt
+.DS_Store
