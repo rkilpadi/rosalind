@@ -1,4 +1,5 @@
 # Returns all locations of substring within a string
+# NOTE: counts from 1, not 0
 def find_motifs(string, substring):
     occurrences = []
     i, j = 0, len(substring)
