@@ -1,7 +1,6 @@
 from Bio import SeqIO
 
 
-#
 def transition_transversion_ratio(seq1, seq2):
     transitions, transversions = 0, 0
     transitions_set1 = ['A', 'G']
