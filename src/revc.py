@@ -1,8 +1,5 @@
 # reverses a DNA sequence and returns its complement
-def dna_complement(filename):
-    with open(filename, "r") as data:
-        dna = data.read().rstrip()
-
+def dna_complement(dna):
     complement = ''
     for char in dna:
         if char == 'A':
@@ -13,7 +10,9 @@ def dna_complement(filename):
             complement += 'G'
         if char == 'G':
             complement += 'C'
-    print(complement[::-1])
+    return complement[::-1]
 
 
-dna_complement('data/rosalind_revc.txt')
+if __name__ == "__main__":
+    with open('data/rosalind_revc.txt', 'r') as data:
+        print(dna_complement(data.read()))

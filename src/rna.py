@@ -1,9 +1,8 @@
 # transcribes DNA to RNA
-def transcribe(filename):
-    with open(filename, "r") as data:
-        dna = data.read().rstrip()
-
-    print(dna.replace('T', 'U'))
+def transcribe(dna):
+    return dna.replace('T', 'U')
 
 
-transcribe('data/rosalind_dna.txt')
+if __name__ == "__main__":
+    with open('data/rosalind_rna.txt', 'r') as data:
+        print(transcribe(data.read()))

@@ -1,14 +1,14 @@
 # Returns the Hamming distance between two strings
 # Hamming distance is the number of mismatched chars
-def hamming_distance(filename):
-    with open(filename, 'r') as data:
-        genes = data.readlines()
-
+def hamming_distance(str1, str2):
     distance = 0
     for i in range(len(genes[0])):
-        if genes[0][i] != genes[1][i]:
+        if str1[i] != str2[i]:
             distance += 1
-    print(distance)
+    return distance
 
 
-hamming_distance('data/rosalind_hamm.txt')
+if __name__ == "__main__":
+    with open('data/rosalind_hamm.txt', 'r') as data:
+        genes = data.readlines()
+        print(hamming_distance(genes[0], genes[1]))

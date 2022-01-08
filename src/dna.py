@@ -1,7 +1,5 @@
 # counts nucleotides and returns four integers representing A, C, G, T
-def count_bases(filename):
-    with open(filename, "r") as data:
-        dna = data.read().rstrip()
+def count_bases(dna):
 
     a, c, g, t = 0, 0, 0, 0
     for A in dna:
@@ -12,7 +10,9 @@ def count_bases(filename):
         g += 1
     for T in dna:
         t += 1
-    print(a, c, g, t)
+    return a, c, g, t
 
 
-count_bases('data/rosalind_dna.txt')
+if __name__ == "__main__":
+    with open('data/rosalind_dna.txt') as data:
+        print(count_bases(data.read().rstrip()))

@@ -2,11 +2,10 @@ from Bio.Seq import Seq
 
 
 # translates RNA to protein sequence
-def translate(filename):
-    with open(filename, 'r') as data:
-        rna = Seq(data.read().rstrip())
-
-    print(rna.translate(to_stop=True))
+def translate(rna):
+    return rna.translate(to_stop=True)
 
 
-translate('data/rosalind_prot.txt')
+if __name__ == "__main__":
+    with open('data/rosalind_prot.txt', 'r') as data:
+        print(translate(Seq(data.read().rstrip())))
