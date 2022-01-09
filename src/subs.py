@@ -12,6 +12,6 @@ def find_motifs(string, substring):
 
 
 if __name__ == "__main__":
-    with open('data/rosalind_subs.txt', 'r') as data:
+    with open('../data/rosalind_subs.txt', 'r') as data:
         lines = data.read().splitlines()
         print(find_motifs(lines[0], lines[1]))

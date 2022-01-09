@@ -17,5 +17,5 @@ def transition_transversion_ratio(seq1, seq2):
 
 
 if __name__ == "__main__":
-    records = list(SeqIO.parse('data/rosalind_tran.txt', 'fasta'))
+    records = list(SeqIO.parse('../data/rosalind_tran.txt', 'fasta'))
     print(transition_transversion_ratio(records[0].seq, records[1].seq))

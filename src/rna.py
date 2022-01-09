@@ -4,5 +4,5 @@ def transcribe(dna):
 
 
 if __name__ == "__main__":
-    with open('data/rosalind_rna.txt', 'r') as data:
+    with open('../data/rosalind_rna.txt', 'r') as data:
         print(transcribe(data.read()))

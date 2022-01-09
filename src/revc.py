@@ -14,5 +14,5 @@ def dna_complement(dna):
 
 
 if __name__ == "__main__":
-    with open('data/rosalind_revc.txt', 'r') as data:
+    with open('../data/rosalind_revc.txt', 'r') as data:
         print(dna_complement(data.read()))

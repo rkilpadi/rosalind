@@ -7,5 +7,5 @@ def translate(rna):
 
 
 if __name__ == "__main__":
-    with open('data/rosalind_prot.txt', 'r') as data:
+    with open('../data/rosalind_prot.txt', 'r') as data:
         print(translate(Seq(data.read().rstrip())))

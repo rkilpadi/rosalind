@@ -11,6 +11,6 @@ def breed_rabbits(months, litter_size):
 
 
 if __name__ == "__main__":
-    with open('data/rosalind_fib.txt', 'r') as data:
+    with open('../data/rosalind_fib.txt', 'r') as data:
         nums = data.readline().split(' ')
         print(breed_rabbits(int(nums[0]), int(nums[1])))

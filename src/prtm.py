@@ -8,5 +8,5 @@ def get_mass(aas):
 
 
 if __name__ == "__main__":
-    with open('data/rosalind_prtm.txt', 'r') as data:
+    with open('../data/rosalind_prtm.txt', 'r') as data:
         print(get_mass(data.read().rstrip()))

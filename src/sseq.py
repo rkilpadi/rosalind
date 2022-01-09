@@ -17,7 +17,7 @@ def find_subsequence(string, sub):
 
 
 if __name__ == '__main__':
-    records = list(SeqIO.parse('data/rosalind_sseq.txt', 'fasta'))
+    records = list(SeqIO.parse('../data/rosalind_sseq.txt', 'fasta'))
     vals = find_subsequence(records[0].seq, records[1].seq)
     for val in vals:
         print(val+1)

@@ -114,5 +114,5 @@ dmypy.json
 .pyre/
 
 .idea
-/src/data/test.txt
+/data/test.txt
 .DS_Store

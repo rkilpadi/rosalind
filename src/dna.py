@@ -14,5 +14,5 @@ def count_bases(dna):
 
 
 if __name__ == "__main__":
-    with open('data/rosalind_dna.txt') as data:
+    with open('../data/rosalind_dna.txt') as data:
         print(count_bases(data.read().rstrip()))

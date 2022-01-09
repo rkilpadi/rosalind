@@ -9,6 +9,6 @@ def hamming_distance(str1, str2):
 
 
 if __name__ == "__main__":
-    with open('data/rosalind_hamm.txt', 'r') as data:
+    with open('../data/rosalind_hamm.txt', 'r') as data:
         genes = data.readlines()
         print(hamming_distance(genes[0], genes[1]))

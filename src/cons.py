@@ -46,7 +46,7 @@ def get_consensus(dna_records):
 if __name__ == "__main__":
     records = list(SeqIO.parse('data/rosalind_cons.txt', 'fasta'))
     results = get_consensus(records)
-    f = open('results/cons_results.txt', 'w')
+    f = open('../results/cons_results.txt', 'w')
     f.write(results[0] + '\n')
     f.write('A: ' + ' '.join(str(val) for val in results[1]) + '\n')
     f.write('C: ' + ' '.join(str(val) for val in results[2]) + '\n')

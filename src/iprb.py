@@ -15,6 +15,6 @@ def dominant_probability(k, m, n):
 
 
 if __name__ == "__main__":
-    with open('data/rosalind_iprb.txt', 'r') as data:
+    with open('../data/rosalind_iprb.txt', 'r') as data:
         nums = data.readline().split(' ')
         print(dominant_probability(int(nums[0]), int(nums[1]), int(nums[2])))

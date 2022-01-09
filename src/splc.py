@@ -13,5 +13,5 @@ def splice(rna, intron_records):
 
 
 if __name__ == "__main__":
-    records = list(SeqIO.parse('data/rosalind_splc.txt', 'fasta'))
+    records = list(SeqIO.parse('../data/rosalind_splc.txt', 'fasta'))
     print(splice(records.pop(0).seq, records))

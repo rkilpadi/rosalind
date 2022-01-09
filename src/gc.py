@@ -17,4 +17,4 @@ def compute_highest_gc(filename):
 
 
 if __name__ == "__main__":
-    result = compute_highest_gc('data/rosalind_gc.txt')
+    result = compute_highest_gc('../data/rosalind_gc.txt')
