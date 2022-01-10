@@ -13,7 +13,7 @@ def reverse_palindromes(dna, min_len, max_len):
         # shrink current by 2 until min_len is reached, then increment index and repeat
         if len(current) >= min_len:
             if current == complement[len(dna) - i - len(current):len(dna) - i]:
-                restriction_sites.append((i+1, len(current), current))  # counts from 1
+                restriction_sites.append((i+1, len(current)))  # counts from 1
             current = dna[i:i+len(current)-2]
         else:
             i += 1
